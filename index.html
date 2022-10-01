@@ -18,13 +18,13 @@
     <div class="container">
     <header>
         <div class="bigger"></div>
-            <nav>
+            <nav >
                 <div class="content">
-                    <i class="fa-solid fa-headphones-simple"></i>
+                    <i  class="fa-solid fa-headphones-simple"></i>
                     <h1>Call Center</h1>
                 </div>
                 <div class="setting">
-                     <i id="setup" class="fa-solid fa-bars"></i>
+                    <i id="setup" class="fa-solid fa-bars"></i>
                      
                 <ul>
                     
@@ -35,8 +35,7 @@
                 <li><a href="../services/index.html">Services</a></li>
                 
                 <li>
-                    <a href="#" class="click" onlick = "open()">
-                    Pages</a>
+                    <a href="#" class="click">Pages</a>   
                         <ul class="page__menu">
                             <div class="page__cirle">
 
@@ -46,13 +45,16 @@
                             <li><a href="../404error/index.html">404 Page</a></li>
                             <li><a href="../landing pages/index.html">Landing Page</a></li>
                         </ul>
-                        
                     <ion-icon name="chevron-down-outline"></ion-icon>
                 </li>
                 <li><a href="#">Contact Us</a>
                 </li>
-                <li><a href="#"><ion-icon class="search" name="search"></a></ion-icon></li>
-                <li><a href="#">  <ion-icon class="moon" name="moon-outline"></a></ion-icon></li>
+                <li><ion-icon class="search" name="search"></ion-icon>
+                </li>
+                <li>
+                    <div id="wrapper">
+                        <input type="checkbox" name="" class="switch-toggle" id="light"></div>  
+                </li>
               
                </ul>
             </div>
@@ -65,7 +67,6 @@
                         We Providing Best Service & 24/7 Support.</p>
                     <button><a id="one" href="../about/index.html">View Our Works</a> </button>
                 </div>
-        
     </header>
     <main>
         <div class="product">
@@ -93,14 +94,13 @@
             </div>
         </div>
     </div>
-    <div class="services">
+    <div class="services" >
         <div class="services__bigger">
             <div class="services__content">
-            <h2>We Provide Best Services</h2>
+            <h2 class="text">We Provide Best Services</h2>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque,<br> eaque ipsa quae ab illo inventore.</p>
         </div>
         <div class="services__list">
-            <div class="bigger__top">
             <div class="services__top">
                      <i  class="fa-solid fa-headphones-simple"></i>
                
@@ -114,8 +114,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
                 <a href="#">Read More</a>
             </div>
-        </div>
-        <div class="bigger__botom">
+        
             <div class="services__bot">
                 <i class="fa-solid fa-bullhorn"></i>
                 <h2>Debt Collection </h2>
@@ -131,7 +130,6 @@
         </div>
         
             
-        </div>
         <div class="services__button"> 
         <button><a id="two" href="#">Learn More Services</a> </button>
     </div> 
@@ -388,19 +386,6 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js">
 
-</script>
-<script>
-   $(document).ready(function(){
-    $(window).scroll(function(){
-        if($(this).scrollTop()){
-            $('nav').addClass('sticky');
-        }
-        else{
-            $('nav').removeClass('sticky');
-        }
-
-    });
-   });
 </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

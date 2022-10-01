@@ -10,6 +10,9 @@
 .product__left{
     display: block;
     width: 100%;
+    animation: showtop ease-in-out 1 1s forwards;
+    animation-delay: 2s;
+    opacity: 0;
     h2{
         font-size: 36px;
     }
@@ -25,6 +28,8 @@
 .product__left__two{
     display: flex;
     margin: 50px 0px;
+    animation: showright ease-in-out 1 1s forwards;
+    animation-delay: 2s;
 }
 .mision {
     i{
@@ -136,5 +141,25 @@ img{
     }
     .product__bigger{
         margin-left: 8px;
+    }
+}
+@keyframes showtop{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes showright{
+    from{
+        opacity: 0;
+        transform: translate(100px,0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0);
     }
 }

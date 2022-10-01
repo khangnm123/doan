@@ -1,6 +1,6 @@
 .repeat{
     width: 100%;
-    height: 600px;
+    height: 65vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +8,16 @@
 .repeat__bg{
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 65vh;
     background-attachment: fixed;
     top: 0;
+    animation:kenburns-top ease-in-out 8s;
     background-image:url('https://demo.w3layouts.com/demos_new/template_demo/22-03-2021/call-center-liberty-demo_Free/987049326/web/assets/images/bg1.jpg');
 }
 .repeat__bg__one{
     background: linear-gradient(75deg, rgb(22 37 103 / 79%) 10%, rgb(230 2 100 / 68%));
     width: 100%;
-    height: 600px;
+    height: 65vh;
 }
 .repeat__bg__content{
     text-align: center;
@@ -169,4 +170,20 @@
         height: 145vh;
     }
 }
+@keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
+  
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
