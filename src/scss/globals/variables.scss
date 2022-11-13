@@ -7,3 +7,37 @@ $color-grey: #e6e6e6;
 //text
 $fz-heading: 48px;
 $fz-text: 14px;
+
+
+$colors:(
+    base:#fff,
+    text:#000,
+    base2:#eee,
+    text2:#111,
+
+);
+
+$colors-dark:(
+    base:map-get($colors , text ),
+    text:map-get($colors , base ),
+    base2:map-get($colors , text2 ),
+    text2:map-get($colors , base2 ),
+);
+:root{
+    @each  $name ,$color in $colors{
+        --color-#{$name}:#{$color};
+    }
+    --theme : 'light';
+}
+@media(prefers-color-scheme : dark)
+{
+    :root{
+        @each  $name ,$color in $colors-dark{
+            --color-#{$name}:#{$color};
+        }
+    --theme :'dark';
+    }
+}
+@function getColor($color-name){
+    @return var(--color-#{$color-name})
+}

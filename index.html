@@ -12,52 +12,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./poppins/Poppins-Bold.ttf">
     <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Call Center</title>
 </head>
 <body>
     <div class="container">
     <header>
-        <div class="bigger"></div>
+        <div class="header__one"></div>
             <nav >
                 <div class="content">
-                    <i  class="fa-solid fa-headphones-simple"></i>
-                    <h1>Call Center</h1>
+                    <h1>Call Center<i class="fa-solid fa-headphones-simple"></i></h1>
                 </div>
-                <div class="setting">
-                    <i id="setup" class="fa-solid fa-bars"></i>
-                     
+                <div class="setting__ul"><i class="fa-solid fa-bars"></i></div>
                 <ul>
-                    
-                <li><a href="../doan/index.html" target="_self">Home</a>
-                </li>
-                <li><a href="../about/index.html" target="_self" >About</a>
-                </li>
+                <li><a href="../doan/index.html" target="_self">Home</a></li>
+                <li><a href="https://fontawesome.com/icons/caret-up?s=solid&f=classic" target="_self" >About</a></li>
                 <li><a href="../services/index.html">Services</a></li>
-                
+                <li class="collapsible">
+                    <a >Menu
+                        <i class="fa-solid fa-caret-up"></i>
+                    </a>
+                    <ul class="clist">
+                        <div class="clist__one">
+                            <li><a id="clist__a" href="../blog post/index.html"> Blog Post </a></li>
+                            <li><a id="clist__a" href="../blog single/index.html"> Blog Single </a></li>
+                            <li><a id="clist__a" href="../404error/index.html"> 404 Page</a></li>
+                            <li><a id="clist__a" href="../landing pages/index.html"> Landing page</a></li>  
+                        </div>
+                    </ul>
+                </li>
+                <li ><a href="#">Contact Us</a></li>
                 <li>
-                    <a href="#" class="click">Pages</a>   
-                        <ul class="page__menu">
-                            <div class="page__cirle">
-
-                             </div>
-                            <li><a href="../blog post/index.html">Blog Posts</a></li>
-                            <li><a href="../blog single/index.html">Blog Single</a></li>
-                            <li><a href="../404error/index.html">404 Page</a></li>
-                            <li><a href="../landing pages/index.html">Landing Page</a></li>
-                        </ul>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </li>
-                <li><a href="#">Contact Us</a>
-                </li>
-                <li><ion-icon class="search" name="search"></ion-icon>
+                    <div class="seach__one">
+                    <input type="text" id="search1" placeholder="Search..." onkeyup="searchfun()" >
+                    <ion-icon class="search" name="search"></ion-icon>
+                    </div>
                 </li>
                 <li>
-                    <div id="wrapper">
-                        <input type="checkbox" name="" class="switch-toggle" id="light"></div>  
+                    <label class="checkboxdesign">
+                        <input type="checkbox" name="checkboxdesign">
+                    </label>
                 </li>
               
                </ul>
-            </div>
+           
             </nav>
              <div class="bigger__one">
                     <h2>We Offer Best Quality<br>
@@ -213,9 +211,7 @@
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque,<br> eaque ipsa quae ab illo inventore.</p>
             <div class="lastest__big">
                 <div class="lastest__bg__one">
-                    <a href="#">
-                    <img src="https://demo.w3layouts.com/demos_new/template_demo/22-03-2021/call-center-liberty-demo_Free/987049326/web/assets/images/blog1.jpg" alt="">
-                     </a>
+                    <a href="#"><img src="https://demo.w3layouts.com/demos_new/template_demo/22-03-2021/call-center-liberty-demo_Free/987049326/web/assets/images/blog1.jpg" alt=""></a>
                     <div class="lastest__bg__content">
                         <div class="content__p__two"> 
                         <p>November 3, 2020 <p id="pink">- New</p></p></div>
@@ -383,6 +379,40 @@
 
         </div>
     </div>
+    <div>
+        
+    </div>
+    <div class="ballbe">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+        <img src="./img/bubble.png" alt="">
+    </div>
+ </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js">
 

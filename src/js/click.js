@@ -17,27 +17,45 @@ $(document).ready(function(){
 
     });
    });
-   var checkbox_toggle = document.getElementById('light')
-   checkbox_toggle.addEventListener('change' , function(){
-       //thêm class dark
-      document.body.classList.toggle('dark')//toggle kiểm trả thử có class không 
-       let h2 =document.querySelector('h2.text')[0]
-       console.log(h2)
-       h2.style.color ='white';
-        
-   }); 
+//    var checkbox_toggle = document.getElementById('light')
+//    checkbox_toggle.addEventListener('change' , function(){
+//        //thêm class dark
+//       document.body.classList.toggle('dark')//toggle kiểm trả thử có class không 
+//        let h2 =document.querySelector('h2.text')[0]
+//        console.log(h2)
+//        h2.style.color ='white';
+//    }); 
+//    let coll = document.getElementsByClassName("collapsible");
+//    let i;
    
-    // let coll = document.getElementsByClassName("collapsible");
-    // let i;
-    
-    // for (i = 0; i < coll.length; i++) {
-    //   coll[i].addEventListener("click", function () {
-    //     this.classList.toggle("active");
-    //     let content = this.nextElementSibling;
-    //     if (content.style.maxHeight) {
-    //       content.style.maxHeight = null;
-    //     } else {
-    //       content.style.maxHeight = content.scrollHeight + "px";
-    //     }
-    //   });
-    // }
+//    for (i = 0; i < coll.length; i++) {
+//      coll[i].addEventListener("click", function () {
+//        this.classList.toggle("active");
+//        let clist = this.nextElementSibling;
+//        if (clist.style.maxHeight) {
+//            clist.style.maxHeight = null;
+//        } else {
+//            clist.style.maxHeight = clist.scrollHeight + "px";
+//        }
+//      });
+//    }
+//    function light() {
+//     var element = document.body;
+//     element.classList.toggle("dark-mode");
+//  }
+let down = document.querySelector(".fa-caret-up");
+ $(document).ready(function(){
+    $(".fa-caret-up").click(function(){
+        $(".clist__one").toggleClass("one");
+        $(".fa-caret-up").toggleClass("one__fa");
+        
+    })
+ })
+
+//  $(document).ready(function(){
+//     $(".setting__ul").click(function(){
+//         $("ul").toggleClass("ul__block")
+//    
+        
+//     })
+//  })
